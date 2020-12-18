@@ -87,21 +87,25 @@ function LoginPageNavbarAdmin(props) {
                     }} onClick={props.forceUpdate} > DASHBOARD </Button>
                 </Link>
               </NavItem>
-              {checkAuth() && !isLoading ?
+              {
+                isLoading ?
+                <NavItem>
+                  <div style={{marginTop: '30px', marginLeft: '20px'}}>
+                    <Spinner />
+                  </div>
+                </NavItem>
+                :
+                checkAuth() && !isLoading ?
                 <NavItem>
                   <LogoutButtonAdmin />
                 </NavItem>
-              : !checkAuth() && isLoading ?
-                <NavItem>
-                  <LoginButton />
-                </NavItem>
-              :
-              <NavItem>
-                <div style={{marginTop: '30px', marginLeft: '20px'}}>
-                  <Spinner />
-                </div>
+                : !checkAuth() && !isLoading ?
+                  <NavItem>
+                    <LoginButton />
+                  </NavItem>
+                :
+                ""
 
-              </NavItem>
               }
 
             </Nav>
