@@ -1,0 +1,42 @@
+
+                <NavItem>
+                  <Link to="/contact">
+                    <Button style={{
+                      background: "none",
+                      color: ButtonColor,
+                      position: "relative",
+                      float: "right",
+                      fontSize: "7px",
+                      borderRadius: "0px",
+                      padding: "5px"
+                    }} > GET IN TOUCH </Button>
+                  </Link>
+                </NavItem>
+                <NavItem>
+                  <Link to="/our-approach">
+                    <Button style={{
+                      background: "none",
+                      color: ButtonColor,
+                      position: "relative",
+                      float: "right",
+                      fontSize: "7px",
+                      borderRadius: "0px",
+                      padding: "5px"
+                    }} > APPROACH </Button>
+                  </Link>
+                </NavItem>
+                <NavItem>
+                  <Link to="/arcride" >
+                    <Button
+                      style={{
+                        background: "none",
+                        color: ButtonColor,
+                        position: "relative",
+                        float: "right",
+                        fontSize: "7px",
+                        borderRadius: "0px",
+                        padding: "5px"
+                      }} onClick={props.forceUpdate} > HOME </Button>
+                  </Link>
+
+                </NavItem>
