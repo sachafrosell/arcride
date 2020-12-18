@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "60cede4b16e5bbd671f75df61d2ea67f",
+    "revision": "a7987defc14239ccf5d84ba7021f5299",
     "url": "/arcride/index.html"
   },
   {
-    "revision": "146b7f2e0d28b4238bcb",
+    "revision": "139aaa1e9267ed090102",
     "url": "/arcride/static/css/main.3d30285f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/arcride/static/js/2.e396ed74.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "146b7f2e0d28b4238bcb",
-    "url": "/arcride/static/js/main.39030e58.chunk.js"
+    "revision": "139aaa1e9267ed090102",
+    "url": "/arcride/static/js/main.53aad9a4.chunk.js"
   },
   {
     "revision": "a66e614a9d3bf0ad552c",
