@@ -59,7 +59,7 @@ function LoginPageNavbarAdmin(props) {
         <Container>
           <div className="navbar-translate" style={{position: "absolute", top: "8px"}}>
 
-            <Link to="/arcride">
+            <Link to="/home">
               <img
                 src={Logo}
                 alt='Arc Ride Logo'

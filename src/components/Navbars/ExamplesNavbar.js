@@ -109,7 +109,7 @@ function ExamplesNavbar(props) {
             </NavbarBrand>
             {dimensions.width >= 1200 ? <Nav style={{float: "right", marginRight: "-950px"}}>
               <NavItem>
-                <Link to="/arcride" >
+                <Link to="/home" >
                   <Button
                     style={{
                       background: "none",
@@ -151,7 +151,7 @@ function ExamplesNavbar(props) {
                   }} > GET IN TOUCH </Button>
                 </Link>
               </NavItem>
-              
+
 
 
 
@@ -159,7 +159,7 @@ function ExamplesNavbar(props) {
             </Nav>
             : dimensions.width >= 992 && dimensions.width < 1200 ? <Nav style={{float: "right", marginRight: "-800px"}}>
               <NavItem>
-                <Link to="/arcride" >
+                <Link to="/home" >
                   <Button
                     style={{
                       background: "none",
@@ -206,7 +206,7 @@ function ExamplesNavbar(props) {
 
             </Nav> : dimensions.width >= 768 && dimensions.width < 992 ? <Nav style={{float: "right", marginRight: "-350px"}}>
               <NavItem>
-                <Link to="/arcride" >
+                <Link to="/home" >
                   <Button
                     style={{
                       background: "none",

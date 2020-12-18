@@ -24,7 +24,7 @@ ReactDOM.render(
 
       <Switch>
         <Route
-          path="/arcride"
+          path="/home"
           render={(props) => <LandingPage {...props} />}
         />
         <Route
@@ -65,7 +65,7 @@ ReactDOM.render(
               />
 
 
-          <Redirect from="/" to="/arcride" />
+          <Redirect from="/" to="/home" />
         </Switch>
       </HashRouter>
       ,

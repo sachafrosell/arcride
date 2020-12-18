@@ -48,7 +48,7 @@ function InfoFooter() {
               MENU
             </h5>
             <div style={{fontSize: "13px", opacity: "30%"}}>
-              <Link to='/arcride'>
+              <Link to='/home'>
               <h5 style={{color: "white", fontSize: "13px"}}>
                 HOME
               </h5>
