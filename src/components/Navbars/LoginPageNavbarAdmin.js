@@ -91,7 +91,7 @@ function LoginPageNavbarAdmin(props) {
                 <NavItem>
                   <LogoutButtonAdmin />
                 </NavItem>
-              : !checkAuth() && !isLoading ?
+              : !checkAuth() && isLoading ?
                 <NavItem>
                   <LoginButton />
                 </NavItem>
