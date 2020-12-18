@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Arc-Ride-Beta/static/css/main.7827c7c9.chunk.css",
+    "main.js": "/Arc-Ride-Beta/static/js/main.81798a48.chunk.js",
+    "main.js.map": "/Arc-Ride-Beta/static/js/main.81798a48.chunk.js.map",
+    "runtime-main.js": "/Arc-Ride-Beta/static/js/runtime-main.a83c7148.js",
+    "runtime-main.js.map": "/Arc-Ride-Beta/static/js/runtime-main.a83c7148.js.map",
+    "static/js/2.aa721bf2.chunk.js": "/Arc-Ride-Beta/static/js/2.aa721bf2.chunk.js",
+    "static/js/2.aa721bf2.chunk.js.map": "/Arc-Ride-Beta/static/js/2.aa721bf2.chunk.js.map",
+    "index.html": "/Arc-Ride-Beta/index.html",
+    "precache-manifest.1502ebf29d1462cd50d04e52ec9fd0dc.js": "/Arc-Ride-Beta/precache-manifest.1502ebf29d1462cd50d04e52ec9fd0dc.js",
+    "service-worker.js": "/Arc-Ride-Beta/service-worker.js",
+    "static/css/main.7827c7c9.chunk.css.map": "/Arc-Ride-Beta/static/css/main.7827c7c9.chunk.css.map",
+    "static/js/2.aa721bf2.chunk.js.LICENSE.txt": "/Arc-Ride-Beta/static/js/2.aa721bf2.chunk.js.LICENSE.txt",
+    "static/media/800px_COLOURBOX25316311.jpg": "/Arc-Ride-Beta/static/media/800px_COLOURBOX25316311.15c05b72.jpg",
+    "static/media/Eric.png": "/Arc-Ride-Beta/static/media/Eric.2864ab5d.png",
+    "static/media/Felix.png": "/Arc-Ride-Beta/static/media/Felix.367bb124.png",
+    "static/media/John.png": "/Arc-Ride-Beta/static/media/John.7b180c0f.png",
+    "static/media/bede.png": "/Arc-Ride-Beta/static/media/bede.346d2c0e.png",
+    "static/media/city1.jpg": "/Arc-Ride-Beta/static/media/city1.5fadfd47.jpg",
+    "static/media/city3.jpg": "/Arc-Ride-Beta/static/media/city3.8c613825.jpg",
+    "static/media/city4.jpg": "/Arc-Ride-Beta/static/media/city4.9c40e369.jpg",
+    "static/media/giraffe.jpg": "/Arc-Ride-Beta/static/media/giraffe.5849cfaf.jpg",
+    "static/media/jo-hurst-croft.jpg": "/Arc-Ride-Beta/static/media/jo-hurst-croft.de4fdd9c.jpg",
+    "static/media/joanna-cheong.jpg": "/Arc-Ride-Beta/static/media/joanna-cheong.0fd4fd48.jpg",
+    "static/media/karl-boyce.jpg": "/Arc-Ride-Beta/static/media/karl-boyce.d8ad5e38.jpg",
+    "static/media/lake-burera.jpg": "/Arc-Ride-Beta/static/media/lake-burera.6367ecf3.jpg",
+    "static/media/logo_dark_ride.png": "/Arc-Ride-Beta/static/media/logo_dark_ride.a131465d.png",
+    "static/media/logo_light_ride.png": "/Arc-Ride-Beta/static/media/logo_light_ride.a3c2014b.png",
+    "static/media/now-ui-kit.css": "/Arc-Ride-Beta/static/media/nucleo-outline.8ebec31f.woff2",
+    "static/media/richard-bouma.jpg": "/Arc-Ride-Beta/static/media/richard-bouma.24fe03c1.jpg",
+    "static/media/road1.jpg": "/Arc-Ride-Beta/static/media/road1.72649299.jpg",
+    "static/media/road2.jpg": "/Arc-Ride-Beta/static/media/road2.bac96e2c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a83c7148.js",
+    "static/js/2.aa721bf2.chunk.js",
+    "static/css/main.7827c7c9.chunk.css",
+    "static/js/main.81798a48.chunk.js"
+  ]
+}
