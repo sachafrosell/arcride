@@ -24,7 +24,7 @@ ReactDOM.render(
 
       <Switch>
         <Route
-          path="/Arc-Ride-Beta"
+          path="/arcride"
           render={(props) => <LandingPage {...props} />}
         />
         <Route

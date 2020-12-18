@@ -151,6 +151,20 @@ function ExamplesNavbar(props) {
                   }} > GET IN TOUCH </Button>
                 </Link>
               </NavItem>
+              <NavItem>
+                <Link to="/login">
+                  <Button style={{
+                      background: "none",
+                      color: colors.bCol,
+                      position: "relative",
+                      float: "right",
+                      fontSize: "15px",
+                      borderRadius: "0px",
+                      padding: "15px",
+                      marginTop: "20px"
+                  }} > LOGIN </Button>
+                </Link>
+              </NavItem>
 
 
 
