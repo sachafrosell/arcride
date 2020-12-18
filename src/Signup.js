@@ -127,7 +127,8 @@ class signup extends Component {
 			guarantorJob: this.state.guarantorJob,
 			guarantorName: this.state.guarantorName,
 			guarantorNumber: this.state.guarantorNumber,
-			guarantorAddress: this.state.guarantorAddress
+			guarantorAddress: this.state.guarantorAddress,
+			agree: this.state.agree
     });
     this.setState({
       firstname: "",

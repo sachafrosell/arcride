@@ -191,17 +191,38 @@ const UserProfile = props => {
                 <td> Email</td>
                 <td>{userDetails.email}</td>
               </tr>
+
               <tr>
                 <td> Phone Number</td>
                 <td>{userDetails.phoneNumber}</td>
               </tr>
               <tr>
-                <td> Smart Phone</td>
+                <td> Guarantor Name</td>
+                <td>{userDetails.guarantorName}</td>
+              </tr>
+              <tr>
+                <td> Guarantor Number</td>
+                <td>{userDetails.guarantorNumber}</td>
+              </tr>
+              <tr>
+                <td> Guarantor Address</td>
+                <td>{userDetails.guarantorAddress}</td>
+              </tr>
+              <tr>
+                <td> Guarantor Job Title</td>
+                <td>{userDetails.guarantorJob}</td>
+              </tr>
+              <tr>
+                <td> GPS enabled smart phone?</td>
                 <td>{userDetails.smartPhone.toString()}</td>
               </tr>
               <tr>
                 <td> Vehicle Preference</td>
                 <td>{userDetails.vehiclePreference}</td>
+              </tr>
+              <tr>
+                <td> Agreed to T&C's</td>
+                <td>{userDetails.agree}</td>
               </tr>
               <tr>
                 <td> DUI</td>
@@ -236,14 +257,14 @@ const UserProfile = props => {
                 </td>
               </tr>
               <tr>
-                <td> CV </td>
+                <td> CV image</td>
                 <td>
                   <img src={userDetails.URLs ? userDetails.URLs['cv'] : ''} alt='cv' onClick={handleImageClick} style={{width: '100px', scale: 1, position: 'relative'}}>
                   </img>
                 </td>
               </tr>
               <tr>
-                <td> CV </td>
+                <td> CV pdf</td>
                 <td>
                   <Document
                     file={userDetails.URLs ? userDetails.URLs.cv : ''}
