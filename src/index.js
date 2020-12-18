@@ -43,7 +43,7 @@ ReactDOM.render(
             <Auth0Provider
               domain="arc-ride-global.eu.auth0.com"
               clientId="WhYQUjHAqHhD7P87c6OJ0krbyOW08THr"
-              redirectUri="https://arcrideglobal.com/#/login"
+              redirectUri="https://sachafrosell.github.io/login"
             >
               <LoginPage {...props} />
             </Auth0Provider>
@@ -57,7 +57,7 @@ ReactDOM.render(
             <Auth0Provider
               domain="arc-ride-employee.eu.auth0.com"
               clientId="WVQl1bzIIHV1VU2jRJfcolnVL7GlZfey"
-              redirectUri="https://arcrideglobal.com/#/admin-portal"
+              redirectUri="https://sachafrosell.github.io/login"
             >
               <EmployeePortal {...props} />
             </Auth0Provider>
