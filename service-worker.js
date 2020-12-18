@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Arc-Ride-Beta/precache-manifest.1502ebf29d1462cd50d04e52ec9fd0dc.js"
+  "/Arc-Ride-Beta/precache-manifest.c8436dac69ea9fc5f270e69d054cddd4.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e9eeb0866b3d448eb2afd41c73c4b42e",
+    "revision": "3afcf8106b8e2974894f788e839af470",
     "url": "/Arc-Ride-Beta/index.html"
   },
   {
-    "revision": "bb6c96e7836a34534a91",
+    "revision": "4e064be87d3a92809c24",
     "url": "/Arc-Ride-Beta/static/css/main.7827c7c9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Arc-Ride-Beta/static/js/2.aa721bf2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bb6c96e7836a34534a91",
-    "url": "/Arc-Ride-Beta/static/js/main.81798a48.chunk.js"
+    "revision": "4e064be87d3a92809c24",
+    "url": "/Arc-Ride-Beta/static/js/main.ca6657a1.chunk.js"
   },
   {
     "revision": "bbca6e1892ea22a00f2a",

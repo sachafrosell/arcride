@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Arc-Ride-Beta/static/css/main.7827c7c9.chunk.css",
-    "main.js": "/Arc-Ride-Beta/static/js/main.81798a48.chunk.js",
-    "main.js.map": "/Arc-Ride-Beta/static/js/main.81798a48.chunk.js.map",
+    "main.js": "/Arc-Ride-Beta/static/js/main.ca6657a1.chunk.js",
+    "main.js.map": "/Arc-Ride-Beta/static/js/main.ca6657a1.chunk.js.map",
     "runtime-main.js": "/Arc-Ride-Beta/static/js/runtime-main.a83c7148.js",
     "runtime-main.js.map": "/Arc-Ride-Beta/static/js/runtime-main.a83c7148.js.map",
     "static/js/2.aa721bf2.chunk.js": "/Arc-Ride-Beta/static/js/2.aa721bf2.chunk.js",
     "static/js/2.aa721bf2.chunk.js.map": "/Arc-Ride-Beta/static/js/2.aa721bf2.chunk.js.map",
     "index.html": "/Arc-Ride-Beta/index.html",
-    "precache-manifest.1502ebf29d1462cd50d04e52ec9fd0dc.js": "/Arc-Ride-Beta/precache-manifest.1502ebf29d1462cd50d04e52ec9fd0dc.js",
+    "precache-manifest.c8436dac69ea9fc5f270e69d054cddd4.js": "/Arc-Ride-Beta/precache-manifest.c8436dac69ea9fc5f270e69d054cddd4.js",
     "service-worker.js": "/Arc-Ride-Beta/service-worker.js",
     "static/css/main.7827c7c9.chunk.css.map": "/Arc-Ride-Beta/static/css/main.7827c7c9.chunk.css.map",
     "static/js/2.aa721bf2.chunk.js.LICENSE.txt": "/Arc-Ride-Beta/static/js/2.aa721bf2.chunk.js.LICENSE.txt",
@@ -36,6 +36,6 @@
     "static/js/runtime-main.a83c7148.js",
     "static/js/2.aa721bf2.chunk.js",
     "static/css/main.7827c7c9.chunk.css",
-    "static/js/main.81798a48.chunk.js"
+    "static/js/main.ca6657a1.chunk.js"
   ]
 }
