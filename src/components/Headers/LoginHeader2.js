@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from "reactstrap";
 
 
-import Spinner from './Spinner.js';
+import Spinner from '../../Spinner.js';
 
 const titleStyle = {
    fontWeight: "900px",
@@ -41,7 +41,7 @@ const LoginHeader = (props) => {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("./assets/img/road2.jpg") + ")",
+            backgroundImage: "url(" + require("../../assets/img/road2.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>

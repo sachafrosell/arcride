@@ -35,7 +35,7 @@ function ContactHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("./assets/img/road1.jpg") + ")",
+            backgroundImage: "url(" + require("../../assets/img/road1.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>

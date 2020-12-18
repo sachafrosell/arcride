@@ -17,7 +17,7 @@ import {
 import ExamplesNavbar2 from "./components/Navbars/ExamplesNavbar2.js";
 import DarkFooter from "./components/Footers/DarkFooter.js";
 import InfoFooter from "./components/Footers/InfoFooter.js"
-import ContactHeader from "./ContactHeader.js"
+import ContactHeader from "./components/Headers/ContactHeader.js"
 
 
 const inputStyle = {

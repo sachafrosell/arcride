@@ -7,8 +7,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 import ExamplesNavbar2 from "./components/Navbars/LoginPageNavbar.js";
 import DarkFooter from "./components/Footers/DarkFooter.js";
 import InfoFooter from "./components/Footers/InfoFooter.js"
-import LoginHeader from "./LoginHeader.js"
-import LoginHeader2 from "./LoginHeader2.js"
+import LoginHeader from "./components/Headers/LoginHeader.js"
+import LoginHeader2 from "./components/Headers/LoginHeader2.js"
 import SignUp from './Signup.js'
 import Uploads from './Uploads.js'
 

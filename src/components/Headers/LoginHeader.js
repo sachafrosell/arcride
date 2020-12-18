@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
 import { Container, Button } from "reactstrap";
-import './Firestore.js';
+import '../../Firestore.js';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database'; // If using Firebase database
@@ -9,7 +9,7 @@ import 'firebase/storage';  // If using Firebase storage
 import 'firebase/firestore';
 import 'firebase/analytics';
 
-import Spinner from './Spinner.js';
+import Spinner from '../../Spinner.js';
 
 const titleStyle = {
    fontWeight: "900px",
@@ -84,7 +84,7 @@ const LoginHeader = (props) => {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("./assets/img/road2.jpg") + ")",
+            backgroundImage: "url(" + require("../../assets/img/road2.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>
