@@ -90,13 +90,20 @@ function LoginPageNavbar(props) {
                       }} onClick={props.forceUpdate} > DASHBOARD </Button>
                   </Link>
                 </NavItem>
-                {checkAuth() ?
+                {checkAuth() && !isLoading ?
                   <NavItem>
                     <LogoutButton />
                   </NavItem>
+                : !checkAuth() && !isLoading ?
+                  <NavItem>
+                    <LoginButton />
+                  </NavItem>
                 :
                 <NavItem>
-                  <LoginButton />
+                  <div style={{marginTop: '30px', marginLeft: '20px'}}>
+                    <Spinner />
+                  </div>
+
                 </NavItem>
                 }
 
