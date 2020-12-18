@@ -57,7 +57,7 @@ ReactDOM.render(
             <Auth0Provider
               domain="arc-ride-employee.eu.auth0.com"
               clientId="WVQl1bzIIHV1VU2jRJfcolnVL7GlZfey"
-              redirectUri="http://localhost:3000/arcride/#/admin-portal"
+              redirectUri="https://sachafrosell.github.io/arcride#/admin-portal"
             >
               <EmployeePortal {...props} />
             </Auth0Provider>
