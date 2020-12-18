@@ -1,6 +1,6 @@
 [
   {
-    "origin": ["https://sachafrosell.github.io/arcride"],
+    "origin": ["https://sachafrosell.github.io/arcride/#/admin-portal"],
     "method": ["GET"],
     "maxAgeSeconds": 3600
   }
