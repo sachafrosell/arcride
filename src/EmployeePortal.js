@@ -42,9 +42,9 @@ const EmployeePortal = () => {
       </div>
       <Navbar />
       <EmployeePortalHeader pageHeader={pageHeader}/>
-      {!isUserClicked && isAuthenticated && user.sub === 'auth0|5fd702ca1c2467006a68d872' ?
+      {!isUserClicked && isAuthenticated && user.sub === 'auth0|5fdd4ba615ae2b00691bada7' ?
         <VerificationDashboard handleUserClicked={handleUserClicked}/>
-      : isUserClicked && isAuthenticated && user.sub === 'auth0|5fd702ca1c2467006a68d872' ?
+      : isUserClicked && isAuthenticated && user.sub === 'auth0|5fdd4ba615ae2b00691bada7' ?
         <UserProfile userId={userId} handleBackButtonClick={handleBackButtonClick}/>
       :
       ""
