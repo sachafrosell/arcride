@@ -33,7 +33,9 @@ const EmployeePortal = () => {
   }
 
   React.useEffect(() => {
-    window.location.reload();
+    if (!isAuthenticated) {
+      window.location.reload();
+    }
   }, [])
 
 

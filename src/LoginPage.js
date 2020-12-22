@@ -20,6 +20,8 @@ function Contact () {
     number: 1
   })
 
+  const { isAuthenticated, isLoading } = useAuth0();
+
   const [totalPercentage, setTotalPercentage] = React.useState({
     passport: 0,
     cv: 0,
@@ -45,7 +47,10 @@ function Contact () {
   }
 
   React.useEffect(() => {
-    window.location.reload();
+    if (!isAuthenticated) {
+      window.location.reload();
+    }
+
   }, [])
 
   React.useEffect(() => {
@@ -85,7 +90,7 @@ function Contact () {
 
 
 
-  const { isAuthenticated, isLoading } = useAuth0();
+
 
 
 
