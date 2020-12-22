@@ -70,6 +70,12 @@ const LoginHeader = (props) => {
     }
   })
 
+  const percentageLogic = () => (
+    Math.round(((props.totalPercentage.passport + props.totalPercentage.cv + props.totalPercentage.nationalId + props.totalPercentage.commendation + props.totalPercentage.driversLicense) / 500) * 100)
+  )
+
+
+
 
   const checkAuth = () => {
     if (!isLoading) {
@@ -121,6 +127,8 @@ const LoginHeader = (props) => {
                     fontWeight: "900px",
                   fontSize: "20px"}}>
                     <Spinner />
+
+                    {percentageLogic()}%
 
                   </h1>
 

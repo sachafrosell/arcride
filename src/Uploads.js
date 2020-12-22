@@ -2,7 +2,7 @@ import React from 'react'
 import PassportUpload from './PassportUpload.js'
 import CVupload from './CVupload.js'
 import DriversLicenseUpload from './DriversLicenseUpload.js'
-import NationalId from './NationalId.js'
+import NationalId from './NationalIdUpload.js'
 import Commendation from './CommendationUpload.js'
 import './Firestore.js';
 import firebase from 'firebase/app';
@@ -100,6 +100,27 @@ class Uploads extends React.Component {
     })
   }
 
+//  disabled={
+//    !this.state.passport ||
+//    !this.state.cv ||
+//    !this.state.driversLicense ||
+//    !this.state.nationalId
+//  }
+
+
+// <Grid item xs={12}>
+//   <CVupload uploadProgress={this.props.uploadProgress} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+// </Grid>
+// <Grid item xs={12}>
+//   <DriversLicenseUpload uploadProgress={this.props.uploadProgress} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+// </Grid>
+// <Grid item xs={12}>
+//   <NationalId uploadProgress={this.props.uploadProgress} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+// </Grid>
+// <Grid item xs={12}>
+//   <Commendation uploadProgress={this.props.uploadProgress} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+// </Grid>
+
   render() {
     return (
 
@@ -107,20 +128,21 @@ class Uploads extends React.Component {
 
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <PassportUpload uploadProgress={this.props.uploadProgress} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+            <PassportUpload uploadPercentage={this.props.uploadPercentage} uploadProgress={this.props.uploadProgress} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
           <Grid item xs={12}>
-            <CVupload uploadProgress={this.props.uploadProgress} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+            <CVupload uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
           <Grid item xs={12}>
-            <DriversLicenseUpload uploadProgress={this.props.uploadProgress} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+            <DriversLicenseUpload uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
           <Grid item xs={12}>
-            <NationalId uploadProgress={this.props.uploadProgress} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+            <NationalId uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
           <Grid item xs={12}>
-            <Commendation uploadProgress={this.props.uploadProgress} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+            <Commendation uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
+
 
           <Grid item xs={12}>
             <div className="col text-center">

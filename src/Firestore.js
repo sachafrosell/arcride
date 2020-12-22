@@ -5,10 +5,10 @@ import 'firebase/storage';  // If using Firebase storage
 import 'firebase/firestore';
 import 'firebase/analytics';
 
-
+const firebaseKey = "AIzaSyBtyjAk0mhFlf5_eVlczBZ1Lp_ztxCrkgA"
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_KEY,
+  apiKey: firebaseKey,
   authDomain: "arc-ride-test.firebaseapp.com",
   projectId: "arc-ride-test",
   storageBucket: "arc-ride-test.appspot.com",

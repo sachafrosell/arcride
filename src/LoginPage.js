@@ -20,6 +20,15 @@ function Contact () {
     number: 1
   })
 
+  const [totalPercentage, setTotalPercentage] = React.useState({
+    passport: 0,
+    cv: 0,
+    nationalId: 0,
+    driversLicense: 0,
+    commendation: 0
+    }
+  )
+
 
   const [documentsUploaded, setDocumentsUploaded] = React.useState({
     status: false
@@ -57,6 +66,17 @@ function Contact () {
     nationalId: false,
     commendation: false
   })
+
+
+  const uploadPercentage = (document, percentage) => {
+      const previousPercentage = Number(totalPercentage.[document])
+      console.log()
+
+      setTotalPercentage((prevState) => ({
+        ...prevState,
+        [document]: percentage + previousPercentage
+      }));
+  }
 
 
 
@@ -113,13 +133,13 @@ function Contact () {
       {isLoading ?
         <LoginHeader2 />
       :
-      <LoginHeader signUpFormActive={signUpFormActive} isFormActive={signUpActive.active} documentStatus={documentsUploaded} checkFinished={finishedUploadProcess}/>
+      <LoginHeader totalPercentage={totalPercentage} signUpFormActive={signUpFormActive} isFormActive={signUpActive.active} documentStatus={documentsUploaded} checkFinished={finishedUploadProcess}/>
       }
 
       {!(checkLoading() && signUpActive.active) ?
         ""
       : (page.number === 1) ? <SignUp changePage={changePage} />
-      : (page.number === 2 && !finishedUploadProcess)? <Uploads changePage={changePage} checkDocumentsUploaded={checkDocumentsUploaded} setFinishUpload={finishedUploadingDocumentation} finishedUploadProcess={finishedUploadProcess} finishedUpload={finishedUpload}/>
+      : (page.number === 2 && !finishedUploadProcess)? <Uploads uploadPercentage={uploadPercentage} changePage={changePage} checkDocumentsUploaded={checkDocumentsUploaded} setFinishUpload={finishedUploadingDocumentation} finishedUploadProcess={finishedUploadProcess} finishedUpload={finishedUpload}/>
       : ""}
 
 

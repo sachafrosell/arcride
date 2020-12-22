@@ -40,7 +40,6 @@ const EmployeePortal = () => {
     <>
       <div id='dimmer'>
       </div>
-
       <Navbar />
       <EmployeePortalHeader pageHeader={pageHeader}/>
       {!isUserClicked && isAuthenticated && user.sub === 'auth0|5fd702ca1c2467006a68d872' ?
@@ -48,7 +47,8 @@ const EmployeePortal = () => {
       : isUserClicked && isAuthenticated && user.sub === 'auth0|5fd702ca1c2467006a68d872' ?
         <UserProfile userId={userId} handleBackButtonClick={handleBackButtonClick}/>
       :
-        ""
+      ""
+
       }
 
       <InfoFooter />

@@ -27,17 +27,23 @@ export default function App(props) {
       const storageRef = storage.ref(`/Drivers/${userID}/passport`);
       const task = storageRef.put(file);
       task.on(firebase.storage.TaskEvent.STATE_CHANGED, {
+        'next': (snapshot) => {
+          let progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
+          props.uploadPercentage("passport", progress);
+        },
         'complete': () => {
           storageRef.getDownloadURL().then((url) => {
             setFile(null);
             setURL(url);
+
           })
         }
       })
       setTestUpload(false)
     }
     return () => mounted = false;
-  }, [props.verifyUpload, testUpload, user.sub, file])
+  }, [props.verifyUpload, props, testUpload, user.sub, file])
+
 
 
   React.useEffect(() => {

@@ -27,6 +27,10 @@ export default function App(props) {
       const storageRef = storage.ref(`/Drivers/${userID}/commendation`);
       const task = storageRef.put(file);
       task.on(firebase.storage.TaskEvent.STATE_CHANGED, {
+        'next': (snapshot) => {
+          let progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
+          props.uploadPercentage("commendation", progress);
+        },
         'complete': () => {
           storageRef.getDownloadURL().then((url) => {
             setFile(null);
@@ -37,7 +41,7 @@ export default function App(props) {
       setTestUpload(false)
     }
     return () => mounted = false;
-  }, [props.verifyUpload, testUpload, user.sub, file])
+  }, [props.verifyUpload, testUpload, user.sub, file, props])
 
   React.useEffect(() => {
     //let mounted = true;
