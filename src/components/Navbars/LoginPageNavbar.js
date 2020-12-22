@@ -22,6 +22,7 @@ var Logo = LogoDark
 var ButtonColor = "black"
 var navbarColor = "navbar-white"
 
+
 function LoginPageNavbar(props) {
 
   const { isAuthenticated, isLoading } = useAuth0();
@@ -31,12 +32,14 @@ function LoginPageNavbar(props) {
     width: window.innerWidth
   })
 
+
   React.useEffect(() => {
     function handleResize() {
       setDimensions({
         height: window.innerHeight,
         width: window.innerWidth
       })
+      // setButtonPos(-dimensions.width - 800)
     }
     window.addEventListener("resize", handleResize);
     return function cleanup() {
@@ -57,7 +60,6 @@ function LoginPageNavbar(props) {
     <>
 
       <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg" style={{height: 120}}>
-
         <Container>
           <div className="navbar-translate" style={{position: "absolute", top: "8px"}}>
 
@@ -73,9 +75,8 @@ function LoginPageNavbar(props) {
               </img>
             </Link>
 
-            {dimensions.width > 450 ?
-              <Nav style={{float: "right", marginRight: "-950px"}}>
-                <NavItem>
+            {dimensions.width > 992 ?
+              <Nav style={{float: "right", position: "absolute", top: "5px", right: `${-dimensions.width + dimensions.width/3}px`}}>
                   <Link to="/login" >
                     <Button
                       style={{
@@ -89,7 +90,7 @@ function LoginPageNavbar(props) {
                         marginTop: "20px"
                       }} onClick={props.forceUpdate} > DASHBOARD </Button>
                   </Link>
-                </NavItem>
+
                 {checkAuth() && !isLoading ?
                   <NavItem>
                     <LogoutButton />
@@ -108,6 +109,74 @@ function LoginPageNavbar(props) {
                 }
 
               </Nav>
+            : dimensions.width > 600 ?
+            <Nav style={{float: "right", position: "absolute", top: "5px", right: `150px`}}>
+                <Link to="/login" >
+                  <Button
+                    style={{
+                      background: "none",
+                      color: ButtonColor,
+                      position: "relative",
+                      float: "right",
+                      fontSize: "15px",
+                      borderRadius: "0px",
+                      padding: "15px",
+                      marginTop: "20px"
+                    }} onClick={props.forceUpdate} > DASHBOARD </Button>
+                </Link>
+
+              {checkAuth() && !isLoading ?
+                <NavItem>
+                  <LogoutButton />
+                </NavItem>
+              : !checkAuth() && !isLoading ?
+                <NavItem>
+                  <LoginButton />
+                </NavItem>
+              :
+              <NavItem>
+                <div style={{marginTop: '30px', marginLeft: '20px'}}>
+                  <Spinner />
+                </div>
+
+              </NavItem>
+              }
+
+            </Nav>
+            : dimensions.width > 400 ?
+            <Nav style={{float: "right", position: "absolute", top: "5px", right: `50px`}}>
+                <Link to="/login" >
+                  <Button
+                    style={{
+                      background: "none",
+                      color: ButtonColor,
+                      position: "relative",
+                      float: "right",
+                      fontSize: "15px",
+                      borderRadius: "0px",
+                      padding: "15px",
+                      marginTop: "20px"
+                    }} onClick={props.forceUpdate} > DASHBOARD </Button>
+                </Link>
+
+              {checkAuth() && !isLoading ?
+                <NavItem>
+                  <LogoutButton />
+                </NavItem>
+              : !checkAuth() && !isLoading ?
+                <NavItem>
+                  <LoginButton />
+                </NavItem>
+              :
+              <NavItem>
+                <div style={{marginTop: '30px', marginLeft: '20px'}}>
+                  <Spinner />
+                </div>
+
+              </NavItem>
+              }
+
+            </Nav>
             :
             <Nav style={{float: "right", marginRight: "-200px"}}>
 

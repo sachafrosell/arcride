@@ -71,9 +71,10 @@ function LoginPageNavbarAdmin(props) {
               </img>
             </Link>
 
-            {dimensions.width > 450 ? <Nav style={{float: "right", marginRight: "-950px"}}>
-              <NavItem>
-                <Link to="/employee-portal" >
+            {dimensions.width > 992 ?
+              <Nav style={{float: "right", position: "absolute", top: "5px", right: `${-dimensions.width + dimensions.width/3}px`}}>
+
+                <Link to="/admin-portal" >
                   <Button
                     style={{
                       background: "none",
@@ -86,7 +87,7 @@ function LoginPageNavbarAdmin(props) {
                       marginTop: "20px"
                     }} onClick={props.forceUpdate} > DASHBOARD </Button>
                 </Link>
-              </NavItem>
+
               {checkAuth() && !isLoading ?
                 <NavItem>
                   <LogoutButtonAdmin />
@@ -105,16 +106,66 @@ function LoginPageNavbarAdmin(props) {
               }
 
             </Nav>
- : ""}
-            <div className="topnav-right" style={{paddingRight: "150px", marginTop: "-10px"}}>
+            : dimensions.width > 400 ?
+            <Nav style={{float: "right", position: "absolute", top: "5px", right: `${-dimensions.width + dimensions.width/3}px`}}>
+
+              <Link to="/admin-portal" >
+                <Button
+                  style={{
+                    background: "none",
+                    color: ButtonColor,
+                    position: "relative",
+                    float: "right",
+                    fontSize: "15px",
+                    borderRadius: "0px",
+                    padding: "15px",
+                    marginTop: "20px"
+                  }} onClick={props.forceUpdate} > DASHBOARD </Button>
+              </Link>
+
+            {checkAuth() && !isLoading ?
+              <NavItem>
+                <LogoutButtonAdmin />
+              </NavItem>
+            : !checkAuth() && !isLoading ?
+              <NavItem>
+                <LoginButton />
+              </NavItem>
+            :
+            <NavItem>
+              <div style={{marginTop: '30px', marginLeft: '20px'}}>
+                <Spinner />
+              </div>
+
+            </NavItem>
+            }
+
+          </Nav>
+            :
+            <Nav style={{float: "right", position: "absolute", top: "5px", right: `${(-dimensions.width + dimensions.width/3)+50}px`}}>
 
 
 
+            {checkAuth() && !isLoading ?
+              <NavItem>
+                <LogoutButtonAdmin />
+              </NavItem>
+            : !checkAuth() && !isLoading ?
+              <NavItem>
+                <LoginButton />
+              </NavItem>
+            :
+            <NavItem>
+              <div style={{marginTop: '30px', marginLeft: '20px'}}>
+                <Spinner />
+              </div>
 
+            </NavItem>
+            }
 
+          </Nav>
+            }
 
-
-            </div>
 
           </div>
 
