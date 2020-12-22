@@ -32,6 +32,10 @@ const EmployeePortal = () => {
     pageHeader.current.style.transform = "translate3d(0,0,0)";
   }
 
+  React.useEffect(() => {
+    window.location.reload();
+  }, [])
+
 
 
 

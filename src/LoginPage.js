@@ -45,6 +45,10 @@ function Contact () {
   }
 
   React.useEffect(() => {
+    window.location.reload();
+  }, [])
+
+  React.useEffect(() => {
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
