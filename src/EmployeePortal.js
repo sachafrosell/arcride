@@ -32,11 +32,11 @@ const EmployeePortal = () => {
     pageHeader.current.style.transform = "translate3d(0,0,0)";
   }
 
-  React.useEffect(() => {
-    if (!isAuthenticated) {
-      window.location.reload();
-    }
-  }, [])
+//  React.useEffect(() => {
+//    if (!isAuthenticated) {
+//      window.location.reload();
+//    }
+//  }, [])
 
 
 

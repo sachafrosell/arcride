@@ -20,6 +20,8 @@ function Contact () {
     number: 1
   })
 
+  // const [count, setCount] = React.useState(0);
+
   const { isAuthenticated, isLoading } = useAuth0();
 
   const [totalPercentage, setTotalPercentage] = React.useState({
@@ -46,12 +48,7 @@ function Contact () {
     })
   }
 
-  React.useEffect(() => {
-    if (!isAuthenticated) {
-      window.location.reload();
-    }
 
-  }, [])
 
   React.useEffect(() => {
     document.body.classList.add("landing-page");
