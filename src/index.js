@@ -69,7 +69,7 @@ ReactDOM.render(
               />
 
 
-          <Redirect from="/" to="/home" />
+          
         </Switch>
       </HashRouter>
       ,
