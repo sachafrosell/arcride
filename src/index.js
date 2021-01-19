@@ -9,7 +9,7 @@ import LoginPage from './LoginPage.js'
 import EmployeePortal from './EmployeePortal.js'
 import PillarPage from './PillarPage.js'
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
-
+import Authenticator from './auth0.js';
 
 
 // styles
@@ -18,10 +18,13 @@ import "./assets/css/now-ui-kit.css";
 import "./assets/demo/demo.css";
 
 
+//const { isAuthenticated, user } = useAuth0();
+
+
 ReactDOM.render(
 
     <HashRouter>
-
+      {Authenticator ? <Redirect to="/login" /> : ""}
       <Switch>
         <Route
           path="/home"
