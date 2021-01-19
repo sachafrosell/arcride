@@ -24,7 +24,7 @@ import "./assets/demo/demo.css";
 ReactDOM.render(
 
     <BrowserRouter>
-      {Authenticator ? <Redirect to="/login" /> : ""}
+
       <Switch>
         <Route
           path="/arcride/home"
