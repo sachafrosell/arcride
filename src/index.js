@@ -8,7 +8,7 @@ import Contact from './Contact.js'
 import LoginPage from './LoginPage.js'
 import EmployeePortal from './EmployeePortal.js'
 import PillarPage from './PillarPage.js'
-import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import Authenticator from './auth0.js';
 
 
@@ -23,7 +23,7 @@ import "./assets/demo/demo.css";
 
 ReactDOM.render(
 
-    <HashRouter>
+    <BrowserRouter>
       {Authenticator ? <Redirect to="/login" /> : ""}
       <Switch>
         <Route
@@ -46,7 +46,7 @@ ReactDOM.render(
             <Auth0Provider
               domain="arc-ride-driver.eu.auth0.com"
               clientId="gi7faKQ7DnUz6Fi4472AmEnIIZbTWQ8X"
-              redirectUri="https://sachafrosell.github.io/arcride/#/login"
+              redirectUri="https://sachafrosell.github.io/arcride/login"
             >
               <LoginPage {...props} />
             </Auth0Provider>
@@ -60,7 +60,7 @@ ReactDOM.render(
             <Auth0Provider
               domain="arc-ride-employee.eu.auth0.com"
               clientId="WVQl1bzIIHV1VU2jRJfcolnVL7GlZfey"
-              redirectUri="https://sachafrosell.github.io/arcride#/admin-portal"
+              redirectUri="https://sachafrosell.github.io/arcride/admin-portal"
             >
               <EmployeePortal {...props} />
             </Auth0Provider>
@@ -70,7 +70,7 @@ ReactDOM.render(
 
           <Redirect from="/" to="/home" />
         </Switch>
-      </HashRouter>
+      </BrowserRouter>
       ,
   document.getElementById("root")
 );
