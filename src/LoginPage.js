@@ -136,6 +136,7 @@ function Contact (props) {
     const changeUrl = () => {
       if (isAuthenticated && !isLoading && count === 0) {
         console.log("hit")
+        console.log(window.location.hash)
         setCount(1);
         return (props.history.replace(`${window.location.hash}`))
       }
