@@ -27,21 +27,21 @@ ReactDOM.render(
       {Authenticator ? <Redirect to="/login" /> : ""}
       <Switch>
         <Route
-          path="/home"
+          path="/arcride/home"
           render={(props) => <LandingPage {...props} />}
         />
         <Route
-          path="/our-approach"
+          path="/arcride/our-approach"
           render={(props) => <PillarPage {...props} />}
         />
 
         <Route
-          path="/contact"
+          path="/arcride/contact"
           render={(props) => <Contact {...props} />}
         />
 
         <Route
-          path="/login"
+          path="/arcride/login"
           render={(props) => (
             <Auth0Provider
               domain="arc-ride-driver.eu.auth0.com"
@@ -55,7 +55,7 @@ ReactDOM.render(
 
 
         <Route
-          path="/admin-portal"
+          path="/arcride/admin-portal"
           render={(props) => (
             <Auth0Provider
               domain="arc-ride-employee.eu.auth0.com"
@@ -68,7 +68,7 @@ ReactDOM.render(
               />
 
 
-          <Redirect from="/" to="/home" />
+          <Redirect from="/" to="/arcride/home" />
         </Switch>
       </BrowserRouter>
       ,
