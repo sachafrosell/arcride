@@ -14,7 +14,7 @@ import Uploads from './Uploads.js'
 
 
 
-function Contact () {
+function Contact (props) {
 
   const [page, setPage] = React.useState({
     number: 1
@@ -135,7 +135,7 @@ function Contact () {
   return (
     <>
     {console.log(window.location.hash)}
-    {isAuthenticated ? props.history.push(`/${window.location.hash}`)}
+    {isAuthenticated ? props.history.push(`/${window.location.hash}`) : ""}
       <ExamplesNavbar2 />
       {isLoading ?
         <LoginHeader2 />
