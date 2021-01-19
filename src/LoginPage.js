@@ -149,7 +149,7 @@ function Contact (props) {
 
   return (
     <>
-      {changeUrl()}
+      
       <ExamplesNavbar2 />
       {isLoading ?
         <LoginHeader2 />
