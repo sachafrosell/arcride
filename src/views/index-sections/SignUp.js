@@ -141,7 +141,7 @@ function SignUp() {
             <Button
               className="btn-round btn-white"
               color="default"
-              to="/arcride/login-page"
+              to="/login-page"
               outline
               size="lg"
               tag={Link}

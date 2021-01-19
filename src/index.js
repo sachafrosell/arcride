@@ -8,7 +8,7 @@ import Contact from './Contact.js'
 import LoginPage from './LoginPage.js'
 import EmployeePortal from './EmployeePortal.js'
 import PillarPage from './PillarPage.js'
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { Hashrouter, Route, Switch, Redirect } from "react-router-dom";
 import Authenticator from './auth0.js';
 
 
@@ -23,30 +23,30 @@ import "./assets/demo/demo.css";
 
 ReactDOM.render(
 
-    <BrowserRouter>
+    <Hashrouter>
 
       <Switch>
         <Route
-          path="/arcride/home"
+          path="/home"
           render={(props) => <LandingPage {...props} />}
         />
         <Route
-          path="/arcride/our-approach"
+          path="/our-approach"
           render={(props) => <PillarPage {...props} />}
         />
 
         <Route
-          path="/arcride/contact"
+          path="/contact"
           render={(props) => <Contact {...props} />}
         />
 
         <Route
-          path="/arcride/login"
+          path="/login"
           render={(props) => (
             <Auth0Provider
               domain="arc-ride-driver.eu.auth0.com"
               clientId="gi7faKQ7DnUz6Fi4472AmEnIIZbTWQ8X"
-              redirectUri="https://sachafrosell.github.io/arcride/arcride/login"
+              redirectUri="https://sachafrosell.github.io/arcride/login"
             >
               <LoginPage {...props} />
             </Auth0Provider>
@@ -55,12 +55,12 @@ ReactDOM.render(
 
 
         <Route
-          path="/arcride/admin-portal"
+          path="/admin-portal"
           render={(props) => (
             <Auth0Provider
               domain="arc-ride-employee.eu.auth0.com"
               clientId="WVQl1bzIIHV1VU2jRJfcolnVL7GlZfey"
-              redirectUri="https://sachafrosell.github.io/arcride/arcride/admin-portal"
+              redirectUri="https://sachafrosell.github.io/arcride/admin-portal"
             >
               <EmployeePortal {...props} />
             </Auth0Provider>
@@ -68,9 +68,9 @@ ReactDOM.render(
               />
 
 
-          <Redirect from="/" to="/arcride/home" />
+          <Redirect from="/" to="/home" />
         </Switch>
-      </BrowserRouter>
+      </Hashrouter>
       ,
   document.getElementById("root")
 );

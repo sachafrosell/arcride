@@ -82,13 +82,13 @@ function LandingPageHeaderMobile() {
 
             </h1>
             <span>
-              <Link to='/arcride/our-approach'>
+              <Link to='/our-approach'>
                 <Button style={ButtonStyle}>
                   OUR APPROACH
                 </Button>
               </Link>
 
-              <Link to='/arcride/contact'>
+              <Link to='/contact'>
                 <Button style={ButtonStyle}>
                   GET IN TOUCH
                 </Button>

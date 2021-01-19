@@ -41,7 +41,7 @@ function LoginPage() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/arcride/login.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/login.jpg") + ")",
           }}
         ></div>
         <div className="content">

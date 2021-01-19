@@ -109,7 +109,7 @@ function ExamplesNavbar(props) {
             </NavbarBrand>
             {dimensions.width >= 1200 ? <Nav style={{float: "right", marginRight: "-950px"}}>
               <NavItem>
-                <Link to="/arcride/home" >
+                <Link to="/home" >
                   <Button
                     style={{
                       background: "none",
@@ -124,7 +124,7 @@ function ExamplesNavbar(props) {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="/arcride/our-approach">
+                <Link to="/our-approach">
                   <Button style={{
                       background: "none",
                       color: colors.bCol,
@@ -138,7 +138,7 @@ function ExamplesNavbar(props) {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="/arcride/contact">
+                <Link to="/contact">
                   <Button style={{
                       background: "none",
                       color: colors.bCol,
@@ -159,7 +159,7 @@ function ExamplesNavbar(props) {
             </Nav>
             : dimensions.width >= 992 && dimensions.width < 1200 ? <Nav style={{float: "right", marginRight: "-800px"}}>
               <NavItem>
-                <Link to="/arcride/home" >
+                <Link to="/home" >
                   <Button
                     style={{
                       background: "none",
@@ -174,7 +174,7 @@ function ExamplesNavbar(props) {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="/arcride/our-approach">
+                <Link to="/our-approach">
                   <Button style={{
                       background: "none",
                       color: colors.bCol,
@@ -188,7 +188,7 @@ function ExamplesNavbar(props) {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="/arcride/contact">
+                <Link to="/contact">
                   <Button style={{
                       background: "none",
                       color: colors.bCol,
@@ -206,7 +206,7 @@ function ExamplesNavbar(props) {
 
             </Nav> : dimensions.width >= 768 && dimensions.width < 992 ? <Nav style={{float: "right", marginRight: "-350px"}}>
               <NavItem>
-                <Link to="/arcride/home" >
+                <Link to="/home" >
                   <Button
                     style={{
                       background: "none",
@@ -221,7 +221,7 @@ function ExamplesNavbar(props) {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="/arcride/our-approach">
+                <Link to="/our-approach">
                   <Button style={{
                       background: "none",
                       color: colors.bCol,
@@ -235,7 +235,7 @@ function ExamplesNavbar(props) {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="/arcride/contact">
+                <Link to="/contact">
                   <Button style={{
                       background: "none",
                       color: colors.bCol,

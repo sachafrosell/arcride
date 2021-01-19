@@ -59,7 +59,7 @@ function LoginPageNavbarAdmin(props) {
         <Container>
           <div className="navbar-translate" style={{position: "absolute", top: "8px"}}>
 
-            <Link to="/arcride/home">
+            <Link to="/home">
               <img
                 src={Logo}
                 alt='Arc Ride Logo'
@@ -74,7 +74,7 @@ function LoginPageNavbarAdmin(props) {
             {dimensions.width > 992 ?
               <Nav style={{float: "right", position: "absolute", top: "5px", right: `${-dimensions.width + dimensions.width/3}px`}}>
 
-                <Link to="/arcride/admin-portal" >
+                <Link to="/admin-portal" >
                   <Button
                     style={{
                       background: "none",
@@ -109,7 +109,7 @@ function LoginPageNavbarAdmin(props) {
             : dimensions.width > 400 ?
             <Nav style={{float: "right", position: "absolute", top: "5px", right: `${-dimensions.width + dimensions.width/3}px`}}>
 
-              <Link to="/arcride/admin-portal" >
+              <Link to="/admin-portal" >
                 <Button
                   style={{
                     background: "none",

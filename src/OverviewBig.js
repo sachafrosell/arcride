@@ -75,7 +75,7 @@ class Big extends React.Component {
 
 
                   </h5>
-                  <Link to='/arcride/our-approach'>
+                  <Link to='/our-approach'>
                     <Button style={ButtonStyle}>
                       MORE INFO
                     </Button>
