@@ -134,7 +134,7 @@ function Contact () {
 
   return (
     <>
-
+    {console.log(window.location.hash)}
       <ExamplesNavbar2 />
       {isLoading ?
         <LoginHeader2 />
