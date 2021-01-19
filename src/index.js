@@ -25,6 +25,7 @@ ReactDOM.render(
 
     <HashRouter>
 
+
       <Switch>
         <Route
           path="/home"
@@ -46,7 +47,7 @@ ReactDOM.render(
             <Auth0Provider
               domain="arc-ride-driver.eu.auth0.com"
               clientId="gi7faKQ7DnUz6Fi4472AmEnIIZbTWQ8X"
-              redirectUri="https://sachafrosell.github.io/arcride#/login"
+              redirectUri="https://sachafrosell.github.io/arcride/#/login"
             >
               <LoginPage {...props} />
             </Auth0Provider>
@@ -60,7 +61,7 @@ ReactDOM.render(
             <Auth0Provider
               domain="arc-ride-employee.eu.auth0.com"
               clientId="WVQl1bzIIHV1VU2jRJfcolnVL7GlZfey"
-              redirectUri="https://sachafrosell.github.io/arcride#/admin-portal"
+              redirectUri="https://sachafrosell.github.io/arcride/#/admin-portal"
             >
               <EmployeePortal {...props} />
             </Auth0Provider>
