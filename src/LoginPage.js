@@ -20,8 +20,6 @@ function Contact (props) {
     number: 1
   })
 
-  const [count, setCount] = React.useState(0);
-  const [url, setUrl] = React.useState("");
 
   // const [count, setCount] = React.useState(0);
 
@@ -134,22 +132,11 @@ function Contact (props) {
       })
     }
 
-    const changeUrl = () => {
-      if (isAuthenticated && !isLoading && count === 0) {
-        console.log("hit")
-        if (url === "") {
-          setUrl(window.location.hash);
-        }
-        console.log(url)
-        setCount(1);
-        return (props.history.replace(`${window.location.hash}`))
-      }
-    }
 
 
   return (
     <>
-      
+
       <ExamplesNavbar2 />
       {isLoading ?
         <LoginHeader2 />

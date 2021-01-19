@@ -9,7 +9,6 @@ import LoginPage from './LoginPage.js'
 import EmployeePortal from './EmployeePortal.js'
 import PillarPage from './PillarPage.js'
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
-import Authenticator from './auth0.js';
 
 
 // styles
