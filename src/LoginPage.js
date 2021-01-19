@@ -135,7 +135,7 @@ function Contact (props) {
   return (
     <>
     {console.log(window.location.hash)}
-    {isAuthenticated && !isLoading ? props.history.push(`${window.location.hash}`) : ""}
+    {isAuthenticated && !isLoading ? props.history.replace(`${window.location.hash}`) : ""}
       <ExamplesNavbar2 />
       {isLoading ?
         <LoginHeader2 />
