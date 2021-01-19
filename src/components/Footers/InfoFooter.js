@@ -48,31 +48,31 @@ function InfoFooter() {
               MENU
             </h5>
             <div style={{fontSize: "13px", opacity: "30%"}}>
-              <Link to='/home'>
+              <Link to='/arcride/home'>
               <h5 style={{color: "white", fontSize: "13px"}}>
                 HOME
               </h5>
               </Link>
               <p style={{marginTop: "-10px"}}></p>
-              <Link to='/our-approach'>
+              <Link to='/arcride/our-approach'>
                 <h5 style={{color: "white", fontSize: "13px"}}>
                   OUR APPROACH
                 </h5>
               </Link>
                 <p style={{marginTop: "-10px"}}></p>
-                <Link to='/our-approach'>
+                <Link to='/arcride/our-approach'>
                   <h5 style={{color: "white", fontSize: "13px"}}>
                     OUR TEAM
                   </h5>
                 </Link>
                 <p style={{marginTop: "-10px"}}></p>
-                <Link to='/login'>
+                <Link to='/arcride/login'>
                   <h5 style={{color: "white", fontSize: "13px"}}>
                     DRIVER LOGIN
                   </h5>
                 </Link>
                   <p style={{marginTop: "-10px"}}></p>
-                  <Link to='/contact'>
+                  <Link to='/arcride/contact'>
 
                     <h5 style={{color: "white", fontSize: "13px"}}>
                       CONTACT US

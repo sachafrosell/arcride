@@ -18,7 +18,7 @@ const LogoutButtonAdmin = () => {
         padding: "15px",
         marginTop: "20px"
       }}
-      onClick={() => logout({ returnTo: "https://sachafrosell.github.io/arcride#/admin-portal" })}>
+      onClick={() => logout({ returnTo: "https://sachafrosell.github.io/arcride#/arcride/admin-portal" })}>
       LOGOUT
     </Button>
   );

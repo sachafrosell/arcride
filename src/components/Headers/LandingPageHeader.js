@@ -96,13 +96,13 @@ function LandingPageHeader() {
             </h1>}
 
             <span>
-              <Link to='/our-approach'>
+              <Link to='/arcride/our-approach'>
                 <Button style={ButtonStyle}>
                   OUR APPROACH
                 </Button>
               </Link>
 
-              <Link to='/contact'>
+              <Link to='/arcride/contact'>
                 <Button style={ButtonStyle}>
                   GET IN TOUCH
                 </Button>

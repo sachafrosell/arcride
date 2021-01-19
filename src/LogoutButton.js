@@ -18,7 +18,7 @@ const LogoutButton = () => {
         padding: "15px",
         marginTop: "20px"
       }}
-      onClick={() => logout({ returnTo: "https://sachafrosell.github.io/arcride#/login" })}>
+      onClick={() => logout({ returnTo: "https://sachafrosell.github.io/arcride#/arcride/login" })}>
       LOGOUT
     </Button>
   );

@@ -48,7 +48,7 @@ function ExamplesNavbar(props) {
           <div className="navbar-translate" style={{position: "absolute", top: "8px"}}>
 
 
-              <Link to="/home">
+              <Link to="/arcride/home">
                 <img
                   src={Logo}
                   alt='Arc Ride Logo'
@@ -63,7 +63,7 @@ function ExamplesNavbar(props) {
 
             {dimensions.width > 450 ? <Nav style={{float: "right", marginRight: "-950px"}}>
 
-                <Link to="/home" >
+                <Link to="/arcride/home" >
                   <Button
                     style={{
                       background: "none",
@@ -77,7 +77,7 @@ function ExamplesNavbar(props) {
                     }} onClick={props.forceUpdate} > HOME </Button>
                 </Link>
 
-                  <Link to="/our-approach">
+                  <Link to="/arcride/our-approach">
                     <Button style={{
                       background: "none",
                       color: ButtonColor,
@@ -90,7 +90,7 @@ function ExamplesNavbar(props) {
                     }} > APPROACH </Button>
                   </Link>
 
-                  <Link to="/contact">
+                  <Link to="/arcride/contact">
                     <Button style={{
                       background: "none",
                       color: ButtonColor,
