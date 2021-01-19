@@ -8,7 +8,7 @@ import Contact from './Contact.js'
 import LoginPage from './LoginPage.js'
 import EmployeePortal from './EmployeePortal.js'
 import PillarPage from './PillarPage.js'
-import { Hashrouter, Route, Switch, Redirect } from "react-router-dom";
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import Authenticator from './auth0.js';
 
 
@@ -23,7 +23,7 @@ import "./assets/demo/demo.css";
 
 ReactDOM.render(
 
-    <Hashrouter>
+    <HashRouter>
 
       <Switch>
         <Route
@@ -70,7 +70,7 @@ ReactDOM.render(
 
           <Redirect from="/" to="/home" />
         </Switch>
-      </Hashrouter>
+      </HashRouter>
       ,
   document.getElementById("root")
 );
