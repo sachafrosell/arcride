@@ -4,6 +4,9 @@ import CVupload from './CVupload.js'
 import DriversLicenseUpload from './DriversLicenseUpload.js'
 import NationalId from './NationalIdUpload.js'
 import Commendation from './CommendationUpload.js'
+import PoliceClearance from './PoliceClearanceUpload.js'
+import DciReciept from './DciUpload.js'
+import PelezaCertificate from './PelezaVerificationCertificateUpload.js'
 import './Firestore.js';
 import firebase from 'firebase/app';
 import 'firebase/auth';
@@ -37,6 +40,12 @@ class Uploads extends React.Component {
       nationalIdURL: "",
       commendation: false,
       commendationURL: "",
+      pelezaCertificate: false,
+      pelezaCertificateURL: "",
+      policeClearance: false,
+      policeClearanceURL: "",
+      dciReciept: false,
+      dciRecieptURL: "",
       verification: false
 
     }
@@ -49,6 +58,11 @@ class Uploads extends React.Component {
     urlObj["drivers-licence"] = this.state.driversLicenseURL
     urlObj["national-id"] = this.state.nationalIdURL
     urlObj["certificate-of-commendation"] = this.state.commendationURL
+    urlObj["peleza-certificate"] = this.state.pelezaCertificateURL
+    urlObj["police-clearance"] = this.state.policeClearanceURL
+    urlObj["dci-reciept"] = this.state.dciRecieptURL
+
+
     this.updateUserData(urlObj)
   }
 
@@ -140,6 +154,15 @@ class Uploads extends React.Component {
             <NationalId uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
           <Grid item xs={12}>
+            <PoliceClearance uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+          </Grid>
+          <Grid item xs={12}>
+            <DciReciept uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+          </Grid>
+          <Grid item xs={12}>
+            <PelezaCertificate uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+          </Grid>
+          <Grid item xs={12}>
             <Commendation uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
 
@@ -164,7 +187,11 @@ class Uploads extends React.Component {
                   !this.state.passport ||
                   !this.state.cv ||
                   !this.state.driversLicense ||
-                  !this.state.nationalId
+                  !this.state.nationalId ||
+                  !this.state.pelezaCertificate ||
+                  !this.state.dciReciept ||
+                  !this.state.policeClearance ||
+                  !this.state.commendation
                 }
               >
                 Submit Documents For Verification

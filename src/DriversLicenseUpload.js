@@ -110,7 +110,10 @@ export default function App(props) {
       {signIn()}
       <form >
         <input type="file" name="driversLicense" onChange={handleChange} onClick={props.checkDocumentSubmission}/>
-        Upload Drivers Licence
+        <div style={{float: "right"}}>
+        Upload Driving Licence (with F&G stamp)
+        </div>
+
       </form>
 
     </div>

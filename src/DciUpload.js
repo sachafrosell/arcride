@@ -8,7 +8,6 @@ import 'firebase/firestore';
 import 'firebase/analytics';
 
 import { useAuth0 } from "@auth0/auth0-react";
-// import { Form, Input } from 'reactstrap';
 
 const storage = firebase.storage();
 
@@ -25,12 +24,12 @@ export default function App(props) {
     let mounted = true;
     if (props.verifyUpload && testUpload && mounted) {
       const userID = user.sub.replace('auth0|', '');
-      const storageRef = storage.ref(`/Drivers/${userID}/good-conduct-certificate`);
+      const storageRef = storage.ref(`/Drivers/${userID}/dciReciept`);
       const task = storageRef.put(file);
       task.on(firebase.storage.TaskEvent.STATE_CHANGED, {
         'next': (snapshot) => {
           let progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
-          props.uploadPercentage("good-conduct-certificate", progress);
+          props.uploadPercentage("dciReciept", progress);
         },
         'complete': () => {
           storageRef.getDownloadURL().then((url) => {
@@ -47,8 +46,8 @@ export default function App(props) {
   React.useEffect(() => {
     //let mounted = true;
     if (url !== "" && stopLoop) {
-      props.setFinishUpload("good-conduct-certificate")
-      props.documentURL("good-conduct-certificate", url)
+      props.setFinishUpload("dciReciept")
+      props.documentURL("dciReciept", url)
       setStopLoop(false)
     }
     //return () => mounted = false;
@@ -56,10 +55,10 @@ export default function App(props) {
 
 
 
-
   function handleChange(e) {
     setFile(e.target.files[0]);
   }
+
 
 
 
@@ -83,12 +82,13 @@ export default function App(props) {
     <div>
       {signIn()}
       <form >
-        <input type="file" name="good-conduct-certificate" onChange={handleChange} onClick={props.checkDocumentSubmission}/>
+        <input type="file" name="dciReciept" onChange={handleChange} onClick={props.checkDocumentSubmission}/>
         <div style={{float: "right"}}>
-        Upload E-Citizen Certificate of Good Conduct
+        Upload Receipt from DCI
         </div>
 
       </form>
+
     </div>
   );
 }

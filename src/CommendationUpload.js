@@ -83,7 +83,10 @@ export default function App(props) {
       {signIn()}
       <form >
         <input type="file" name="commendation" onChange={handleChange} onClick={props.checkDocumentSubmission}/>
-        Upload Commendation
+        <div style={{float: "right"}}>
+        Upload Letter of Commendation
+        </div>
+
       </form>
 
     </div>

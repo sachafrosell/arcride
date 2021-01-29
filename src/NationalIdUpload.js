@@ -78,7 +78,10 @@ export default function App(props) {
       {signIn()}
       <form >
         <input type="file" name="nationalId" onChange={handleChange} onClick={props.checkDocumentSubmission}/>
+        <div style={{float: "right"}}>
         Upload National ID
+        </div>
+
       </form>
 
     </div>
