@@ -236,7 +236,7 @@ class signup extends Component {
 									label="Phone Number"
 									name="phoneNumber"
 									autoComplete="phoneNumber"
-									pattern="[0-9]{3}-[0-9]{6}"
+									
 									helperText={errors.phoneNumber}
 									error={errors.phoneNumber ? true : false}
 									onChange={this.handleChange}
