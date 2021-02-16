@@ -5,17 +5,18 @@ import 'firebase/storage';  // If using Firebase storage
 import 'firebase/firestore';
 import 'firebase/analytics';
 
-const firebaseKey = "AIzaSyBtyjAk0mhFlf5_eVlczBZ1Lp_ztxCrkgA"
+const firebaseKey = "AIzaSyBNkmXESRGm930ZV9TNlfGNIlWQr-z3e10"
 
 const firebaseConfig = {
   apiKey: firebaseKey,
-  authDomain: "arc-ride-test.firebaseapp.com",
-  projectId: "arc-ride-test",
-  storageBucket: "arc-ride-test.appspot.com",
-  messagingSenderId: "230211569448",
-  appId: "1:230211569448:web:acd5db22df48c113c2721d",
-  measurementId: "G-E4C9YEMZ0D"
+  authDomain: "arc-ride-global.firebaseapp.com",
+  projectId: "arc-ride-global",
+  storageBucket: "arc-ride-global.appspot.com",
+  messagingSenderId: "622370080586",
+  appId: "1:622370080586:web:0fee3f88257ef14438a3b3",
+  measurementId: "G-TDG5DM1CSH"
 };
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
