@@ -141,7 +141,7 @@ class Uploads extends React.Component {
       <Container component="main" maxWidth="md" style={{paddingTop: "50px", paddingBottom: "50px"}}>
 
         <Grid container spacing={2}>
-          <Grid item xs={12} class="border">
+          <Grid item xs={12}>
             <PassportUpload uploadPercentage={this.props.uploadPercentage} uploadProgress={this.props.uploadProgress} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
           <Grid item xs={12}>
