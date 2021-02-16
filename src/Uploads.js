@@ -146,6 +146,7 @@ class Uploads extends React.Component {
             <p style={{
               border: "0.5px solid black",
               marginTop: "15px",
+              padding: "15px",
               marginBottom: "15px",
               display: "block",
               maxWidth: "100%"
@@ -157,6 +158,7 @@ class Uploads extends React.Component {
             <p style={{
               border: "0.5px solid black",
               marginTop: "15px",
+              padding: "15px",
               marginBottom: "15px",
               display: "block",
               maxWidth: "100%"
@@ -168,6 +170,7 @@ class Uploads extends React.Component {
             <p style={{
               border: "0.5px solid black",
               marginTop: "15px",
+              padding: "15px",
               marginBottom: "15px",
               display: "block",
               maxWidth: "100%"
@@ -179,6 +182,7 @@ class Uploads extends React.Component {
             <p style={{
               border: "0.5px solid black",
               marginTop: "15px",
+              padding: "15px",
               marginBottom: "15px",
               display: "block",
               maxWidth: "100%"
@@ -187,14 +191,16 @@ class Uploads extends React.Component {
 
           <Grid item xs={12}>
             <PoliceClearance uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+            <p style={{
+              border: "0.5px solid black",
+              marginTop: "15px",
+              padding: "15px",
+              marginBottom: "15px",
+              display: "block",
+              maxWidth: "100%"
+            }}></p>
           </Grid>
-          <p style={{
-            border: "0.5px solid black",
-            marginTop: "15px",
-            marginBottom: "15px",
-            display: "block",
-            maxWidth: "100px"
-          }}></p>
+
           <Grid item xs={12}>
             <DciReciept uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
             <p style={{
