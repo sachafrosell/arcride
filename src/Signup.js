@@ -26,7 +26,7 @@ function setInputFilter(textbox, inputFilter) {
 		//
 		["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
     textbox.addEventListener(event, function() {
-      if ((inputFilter(this.value)) && (textbox.value.length <= 9)) {
+      if ((inputFilter(this.value)) && (textbox.value.length <= 13)) {
 
         this.oldValue = this.value;
         this.oldSelectionStart = this.selectionStart;
@@ -166,8 +166,12 @@ class signup extends Component {
 
 	handleSubmit = (event) => {
 		event.preventDefault();
-		this.addUser(event)
-		this.props.changePage();
+		if (this.state.agree == "No" || this.state.DUI == "Yes") {
+			Window.alert("There is an error in your application. One or more options may be incorrect or not align with our policies. Please go over the information again to check for any errors and if there is still an issue then contact us")
+		} else {
+			this.addUser(event)
+			this.props.changePage();
+		}
 	};
 
 	render() {
@@ -236,7 +240,7 @@ class signup extends Component {
 									label="Phone Number"
 									name="phoneNumber"
 									autoComplete="phoneNumber"
-									
+
 									helperText={errors.phoneNumber}
 									error={errors.phoneNumber ? true : false}
 									onChange={this.handleChange}
