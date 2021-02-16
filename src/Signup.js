@@ -167,7 +167,7 @@ class signup extends Component {
 	handleSubmit = (event) => {
 		event.preventDefault();
 		if (this.state.agree == "No" || this.state.DUI == "Yes") {
-			Window.alert("There is an error in your application. One or more options may be incorrect or not align with our policies. Please go over the information again to check for any errors and if there is still an issue then contact us")
+			alert("There is an error in your application. One or more options may be incorrect or not align with our policies. Please go over the information again to check for any errors and if there is still an issue then contact us")
 		} else {
 			this.addUser(event)
 			this.props.changePage();
