@@ -144,27 +144,83 @@ class Uploads extends React.Component {
           <Grid item xs={12}>
             <PassportUpload uploadPercentage={this.props.uploadPercentage} uploadProgress={this.props.uploadProgress} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
+          <p style={{
+            border: "0.5px solid black",
+            marginTop: "15px",
+            marginBottom: "15px",
+            display: "block",
+            maxWidth: "100px"
+          }}></p>
           <Grid item xs={12}>
             <CVupload uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
+          <p style={{
+            border: "0.5px solid black",
+            marginTop: "15px",
+            marginBottom: "15px",
+            display: "block",
+            maxWidth: "100px"
+          }}></p>
           <Grid item xs={12}>
             <DriversLicenseUpload uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
+          <p style={{
+            border: "0.5px solid black",
+            marginTop: "15px",
+            marginBottom: "15px",
+            display: "block",
+            maxWidth: "100px"
+          }}></p>
           <Grid item xs={12}>
             <NationalId uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
+          <p style={{
+            border: "0.5px solid black",
+            marginTop: "15px",
+            marginBottom: "15px",
+            display: "block",
+            maxWidth: "100px"
+          }}></p>
           <Grid item xs={12}>
             <PoliceClearance uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
+          <p style={{
+            border: "0.5px solid black",
+            marginTop: "15px",
+            marginBottom: "15px",
+            display: "block",
+            maxWidth: "100px"
+          }}></p>
           <Grid item xs={12}>
             <DciReciept uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
+          <p style={{
+            border: "0.5px solid black",
+            marginTop: "15px",
+            marginBottom: "15px",
+            display: "block",
+            maxWidth: "100px"
+          }}></p>
           <Grid item xs={12}>
             <PelezaCertificate uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
+          <p style={{
+            border: "0.5px solid black",
+            marginTop: "15px",
+            marginBottom: "15px",
+            display: "block",
+            maxWidth: "100px"
+          }}></p>
           <Grid item xs={12}>
             <Commendation uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
+          <p style={{
+            border: "0.5px solid black",
+            marginTop: "15px",
+            marginBottom: "15px",
+            display: "block",
+            maxWidth: "100px"
+          }}></p>
 
 
           <Grid item xs={12}>
