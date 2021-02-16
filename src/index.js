@@ -44,8 +44,8 @@ ReactDOM.render(
           path="/login"
           render={(props) => (
             <Auth0Provider
-              domain="arc-driver.us.auth0.com"
-              clientId="7UAsrLlRhkd0LFclmjaUpoFPT3yeOxeA"
+              domain="arc-ride-driver.us.auth0.com"
+              clientId="71x680gzaH1Z3AJLh8oeXTEnE1AzyTGC"
               redirectUri="https://sachafrosell.github.io/arcride/#/login"
             >
               <LoginPage {...props} />
