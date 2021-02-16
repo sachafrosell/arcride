@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/arcride/static/css/main.3d30285f.chunk.css",
-    "main.js": "/arcride/static/js/main.20e34e84.chunk.js",
-    "main.js.map": "/arcride/static/js/main.20e34e84.chunk.js.map",
+    "main.js": "/arcride/static/js/main.62e099a1.chunk.js",
+    "main.js.map": "/arcride/static/js/main.62e099a1.chunk.js.map",
     "runtime-main.js": "/arcride/static/js/runtime-main.41a66600.js",
     "runtime-main.js.map": "/arcride/static/js/runtime-main.41a66600.js.map",
     "static/js/2.a716de64.chunk.js": "/arcride/static/js/2.a716de64.chunk.js",
     "static/js/2.a716de64.chunk.js.map": "/arcride/static/js/2.a716de64.chunk.js.map",
     "index.html": "/arcride/index.html",
-    "precache-manifest.ba9921a949e13167aa56a6130f8b543d.js": "/arcride/precache-manifest.ba9921a949e13167aa56a6130f8b543d.js",
+    "precache-manifest.04187ce2e3aadbe3ae09647e7daafec0.js": "/arcride/precache-manifest.04187ce2e3aadbe3ae09647e7daafec0.js",
     "service-worker.js": "/arcride/service-worker.js",
     "static/css/main.3d30285f.chunk.css.map": "/arcride/static/css/main.3d30285f.chunk.css.map",
     "static/js/2.a716de64.chunk.js.LICENSE.txt": "/arcride/static/js/2.a716de64.chunk.js.LICENSE.txt",
@@ -36,6 +36,6 @@
     "static/js/runtime-main.41a66600.js",
     "static/js/2.a716de64.chunk.js",
     "static/css/main.3d30285f.chunk.css",
-    "static/js/main.20e34e84.chunk.js"
+    "static/js/main.62e099a1.chunk.js"
   ]
 }
