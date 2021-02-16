@@ -84,7 +84,7 @@ export default function App(props) {
       <form >
         <input type="file" name="policeClearance" onChange={handleChange} onClick={props.checkDocumentSubmission}/>
         <div style={{float: "right"}}>
-        Upload Police Clearance Certificate (PCC), produced from Directorate of Criminal Investigation (DCI) and verified by Peleza or Arope
+        Upload Police Clearance Certificate (PCC), produced from Directorate of Criminal Investigation (DCI)
         </div>
 
       </form>
