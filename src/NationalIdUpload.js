@@ -24,12 +24,12 @@ export default function App(props) {
     let mounted = true;
     if (props.verifyUpload && testUpload && mounted) {
       const userID = user.sub.replace('auth0|', '');
-      const storageRef = storage.ref(`/Drivers/${userID}/national-id`);
+      const storageRef = storage.ref(`/Drivers/${userID}/certificate-of-good-conduct`);
       const task = storageRef.put(file);
       task.on(firebase.storage.TaskEvent.STATE_CHANGED, {
         'next': (snapshot) => {
           let progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
-          props.uploadPercentage("nationalId", progress);
+          props.uploadPercentage("certificate-of-good-conduct", progress);
         },
         'complete': () => {
           storageRef.getDownloadURL().then((url) => {
@@ -51,8 +51,8 @@ export default function App(props) {
   React.useEffect(() => {
     //let mounted = true;
     if (url !== "" && stopLoop) {
-      props.setFinishUpload("nationalId")
-      props.documentURL("nationalId", url)
+      props.setFinishUpload("certificate-of-good-conduct")
+      props.documentURL("certificate-of-good-conduct", url)
       setStopLoop(false)
     }
     //return () => mounted = false;
@@ -79,7 +79,7 @@ export default function App(props) {
       <form >
         <input type="file" name="nationalId" onChange={handleChange} onClick={props.checkDocumentSubmission}/>
         <div style={{float: "right"}}>
-        Upload National ID
+        Upload E-Citizen Certificate of Good Conduct
         </div>
 
       </form>

@@ -85,7 +85,7 @@ export default function App(props) {
       <form >
         <input type="file" name="passport" onChange={handleChange} onClick={props.checkDocumentSubmission}/>
         <div style={{float: "right"}}>
-        Upload Passport
+        Upload Passport Photo
         </div>
 
       </form>

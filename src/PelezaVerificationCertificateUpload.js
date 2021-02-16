@@ -85,7 +85,7 @@ export default function App(props) {
       <form >
         <input type="file" name="pelezaCertificate" onChange={handleChange} onClick={props.checkDocumentSubmission}/>
         <div style={{float: "right"}}>
-        Upload Peleza Verification Certificate
+        Upload Peleza or Arope Verification Certificate
         </div>
 
       </form>
