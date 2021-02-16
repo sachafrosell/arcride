@@ -116,12 +116,11 @@ function Contact (props) {
     finishedUpload.passport
     && finishedUpload.driversLicense
     && finishedUpload.cv
-    && finishedUpload.nationalId
     && finishedUpload.commendation) {
 
     setFinishedUploadProcess(true)
     }
-  }, [finishedUpload.passport, finishedUpload.commendation, finishedUpload.driversLicense, finishedUpload.cv, finishedUpload.nationalId])
+  }, [finishedUpload.passport, finishedUpload.commendation, finishedUpload.driversLicense, finishedUpload.cv])
 
 
 
