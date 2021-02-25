@@ -133,13 +133,8 @@ const UserProfile = props => {
   }
 
   const handleFileClick = e => {
-    //console.log(e.target.id)
-    console.log(userDetails)
     e.preventDefault();
-    let url = e.target.id
-    console.log(url)
-    console.log(userDetails.URLs)
-    let win = window.open(userDetails.URLs.[url], '_blank');
+    let win = window.open(userDetails.URLs.cv, '_blank');
     win.focus();
   }
 
@@ -241,68 +236,58 @@ const UserProfile = props => {
               <tr>
                 <td> Passport </td>
                 <td>
-                  <Button onClick={handleFileClick} id="passport">
-                    View File
+                  <Button onClick={handleFileClick}>
+                    View Passport
                   </Button>
+
                 </td>
               </tr>
               <tr>
                 <td> Drivers Licence </td>
                 <td>
-                <Button onClick={handleFileClick} id="drivers-licence">
-                  View File
-                </Button>
+                  <img src={userDetails.URLs ? userDetails.URLs['drivers-licence'] : ''} alt='drivers licence' onClick={handleImageClick} style={{width: '100px', scale: 1, position: 'relative'}}>
+                  </img>
                 </td>
               </tr>
               <tr>
-                <td> CV </td>
+                <td> National ID </td>
                 <td>
-                <Button onClick={handleFileClick} id="cv">
-                  View File
-                </Button>
+                  <img src={userDetails.URLs ? userDetails.URLs['national-id'] : ''} alt='national id' onClick={handleImageClick} style={{width: '100px', scale: 1, position: 'relative'}}>
+                  </img>
                 </td>
               </tr>
               <tr>
-                <td> Certificate of Good Conduct</td>
+                <td> Commendation Certificate </td>
                 <td>
-                <Button onClick={handleFileClick} id="certificate-of-good-conduct">
-                  View File
-                </Button>
+                  <img src={userDetails.URLs ? userDetails.URLs['certificate-of-commendation'] : ''} alt='commendation' onClick={handleImageClick} style={{width: '100px', scale: 1, position: 'relative'}}>
+                  </img>
                 </td>
               </tr>
               <tr>
-                <td> DCI Reciept</td>
+                <td> CV image</td>
                 <td>
-                <Button onClick={handleFileClick} id="dci-reciept">
-                  View File
-                </Button>
+                  <img src={userDetails.URLs ? userDetails.URLs['cv'] : ''} alt='cv' onClick={handleImageClick} style={{width: '100px', scale: 1, position: 'relative'}}>
+                  </img>
                 </td>
               </tr>
               <tr>
-                <td> Peleza Certificate</td>
+                <td> CV pdf</td>
                 <td>
-                <Button onClick={handleFileClick} id="peleza-certificate">
-                  View File
-                </Button>
-                </td>
-              </tr>
-              <tr>
-                <td> Police Clearance Certificate</td>
-                <td>
-                <Button onClick={handleFileClick} id="police-clearance">
-                  View File
-                </Button>
-                </td>
-              </tr>
-              <tr>
-                <td> Commendation Certificate</td>
-                <td>
-                <Button onClick={handleFileClick} id="certificate-of-commendation">
-                  View File
-                </Button>
-                </td>
-              </tr>
+                  <Document
+                    file={userDetails.URLs ? userDetails.URLs.cv : ''}
+                    onLoadSucess={onDocumentLoadSuccess}
+                  >
+                    <div>
+                      <Page onClick={handlePdfClick} id='PDF' pageNumber={1} width={100}/>
+                    </div>
 
+                  </Document>
+
+
+
+                </td>
+
+              </tr>
               <tr>
                 <td> Verification Status</td>
                 <td>

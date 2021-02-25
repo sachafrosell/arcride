@@ -36,8 +36,8 @@ class Uploads extends React.Component {
       cvURL: "",
       driversLicense: false,
       driversLicenseURL: "",
-      nationalId: false,
-      nationalIdURL: "",
+      certificateOfGoodConduct: false,
+      certificateOfGoodConductURL: "",
       commendation: false,
       commendationURL: "",
       pelezaCertificate: false,
@@ -56,13 +56,13 @@ class Uploads extends React.Component {
     urlObj["passport"] = this.state.passportURL
     urlObj["cv"] = this.state.cvURL
     urlObj["drivers-licence"] = this.state.driversLicenseURL
-    urlObj["national-id"] = this.state.nationalIdURL
+    urlObj["certificate-of-good-conduct"] = this.state.certificateOfGoodConductURL
     urlObj["certificate-of-commendation"] = this.state.commendationURL
     urlObj["peleza-certificate"] = this.state.pelezaCertificateURL
     urlObj["police-clearance"] = this.state.policeClearanceURL
     urlObj["dci-reciept"] = this.state.dciRecieptURL
 
-
+    console.log(urlObj)
     this.updateUserData(urlObj)
   }
 

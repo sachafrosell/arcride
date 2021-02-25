@@ -77,7 +77,7 @@ export default function App(props) {
     <div>
       {signIn()}
       <form >
-        <input type="file" name="nationalId" onChange={handleChange} onClick={props.checkDocumentSubmission}/>
+        <input type="file" name="certificateOfGoodConduct" onChange={handleChange} onClick={props.checkDocumentSubmission}/>
         <div style={{float: "right"}}>
         Upload E-Citizen Certificate of Good Conduct
         </div>
