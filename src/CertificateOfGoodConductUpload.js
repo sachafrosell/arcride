@@ -24,12 +24,12 @@ export default function App(props) {
     let mounted = true;
     if (props.verifyUpload && testUpload && mounted) {
       const userID = user.sub.replace('auth0|', '');
-      const storageRef = storage.ref(`/Drivers/${userID}/certificate-of-good-conduct`);
+      const storageRef = storage.ref(`/Drivers/${userID}/certificateOfGoodConduct`);
       const task = storageRef.put(file);
       task.on(firebase.storage.TaskEvent.STATE_CHANGED, {
         'next': (snapshot) => {
           let progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
-          props.uploadPercentage("certificate-of-good-conduct", progress);
+          props.uploadPercentage("certificateOfGoodConduct", progress);
         },
         'complete': () => {
           storageRef.getDownloadURL().then((url) => {
@@ -51,8 +51,8 @@ export default function App(props) {
   React.useEffect(() => {
     //let mounted = true;
     if (url !== "" && stopLoop) {
-      props.setFinishUpload("certificate-of-good-conduct")
-      props.documentURL("certificate-of-good-conduct", url)
+      props.setFinishUpload("certificateOfGoodConduct")
+      props.documentURL("certificateOfGoodConduct", url)
       setStopLoop(false)
     }
     //return () => mounted = false;

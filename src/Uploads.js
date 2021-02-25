@@ -2,7 +2,7 @@ import React from 'react'
 import PassportUpload from './PassportUpload.js'
 import CVupload from './CVupload.js'
 import DriversLicenseUpload from './DriversLicenseUpload.js'
-import NationalId from './NationalIdUpload.js'
+import CertificateOfGoodConduct from './CertificateOfGoodConductUpload.js'
 import Commendation from './CommendationUpload.js'
 import PoliceClearance from './PoliceClearanceUpload.js'
 import DciReciept from './DciUpload.js'
@@ -172,7 +172,7 @@ class Uploads extends React.Component {
             maxWidth: "100px"
           }}></p>
           <Grid item xs={12}>
-            <NationalId uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
+            <CertificateOfGoodConduct uploadPercentage={this.props.uploadPercentage} finishedUploadProcess={this.props.finishedUploadProcess} checkDocumentSubmission={this.checkDocumentSubmission} verifyUpload={this.state.verification} setFinishUpload={this.props.setFinishUpload} documentURL={this.documentURL}/>
           </Grid>
           <p style={{
             border: "0.5px solid black",
