@@ -243,7 +243,7 @@ class Uploads extends React.Component {
                   !this.state.passport ||
                   !this.state.cv ||
                   !this.state.driversLicense ||
-                  !this.state.nationalId ||
+                  !this.state.certificateOfGoodConduct ||
                   !this.state.pelezaCertificate ||
                   !this.state.dciReciept ||
                   !this.state.policeClearance ||
