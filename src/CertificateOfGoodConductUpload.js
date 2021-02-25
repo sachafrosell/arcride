@@ -24,7 +24,14 @@ export default function App(props) {
     let mounted = true;
     if (props.verifyUpload && testUpload && mounted) {
       const userID = user.sub.replace('auth0|', '');
-      const storageRef = storage.ref(`/Drivers/${userID}/certificateOfGoodConduct`);
+
+      let fileName = "certificateOfGoodConduct"
+      if file.name.split('.')[1] {
+        fileName = `certificateOfGoodConduct.${file.name.split('.')[1]}`
+      }
+
+      const storageRef = storage.ref(`/Drivers/${userID}/${fileName}`);
+
       const task = storageRef.put(file);
       task.on(firebase.storage.TaskEvent.STATE_CHANGED, {
         'next': (snapshot) => {
