@@ -26,7 +26,7 @@ export default function App(props) {
     if (props.verifyUpload && testUpload && mounted) {
       const userID = user.sub.replace('auth0|', '');
       let fileName = "cv"
-      if file.name.split('.')[1] {
+      if (file.name.split('.')[1]) {
         fileName = `cv.${file.name.split('.')[1]}`
       }
 

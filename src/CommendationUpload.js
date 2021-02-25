@@ -24,8 +24,8 @@ export default function App(props) {
     let mounted = true;
     if (props.verifyUpload && testUpload && mounted) {
       const userID = user.sub.replace('auth0|', '');
-      let fileName = "commendation"
-      if file.name.split('.')[1] {
+      let fileName = "commendation";
+      if (file.name.split('.')[1]) {
         fileName = `commendation.${file.name.split('.')[1]}`
       }
 

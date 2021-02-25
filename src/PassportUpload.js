@@ -26,7 +26,7 @@ export default function App(props) {
       const userID = user.sub.replace('auth0|', '');
 
       let fileName = "passport"
-      if file.name.split('.')[1] {
+      if (file.name.split('.')[1]) {
         fileName = `passport.${file.name.split('.')[1]}`
       }
 
